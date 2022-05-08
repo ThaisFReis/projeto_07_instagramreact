@@ -1,0 +1,988 @@
+body {
+  background-color: #e5e5e5;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0 0;
+
+  text-decoration: none;
+  font-style: none;
+}
+
+/*Topo da página*/
+.barra-topo {
+  background-color: #ffffff;
+
+  width: 100%;
+  height: 60px;
+
+  margin: 0;
+  padding: auto;
+  border-bottom: 1px solid #dbdbdb;
+
+  position: fixed;
+
+  display: block;
+
+  z-index: 1;
+}
+
+/* Para definir a área dos icons */
+.topo {
+  width: 935px;
+  height: 100%;
+
+  position: center;
+
+  margin: auto;
+  padding: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Para definir a área dos icons da esquerda */
+.esquerda {
+  height: 60px;
+  width: 172px;
+
+  position: relative;
+
+  margin-right: 174px;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.icon-logo {
+  position: relative;
+
+  font-size: 30px;
+}
+
+.borda {
+  position: relative;
+
+  background-color: #dbdbdb;
+
+  height: 30px;
+  width: 1px;
+}
+
+img {
+  padding: auto;
+  position: relative;
+}
+
+.esquerda2 {
+  display: none;
+}
+
+/* Para definir a área da barra de pesquisa */
+.meio {
+  background-color: #fafafa;
+
+  height: 28px;
+  width: 215px;
+
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 3px;
+
+  position: relative;
+
+  margin-right: auto;
+
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  position: relative;
+  margin-top: 7px;
+  margin-left: 80px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+
+  color: #979797;
+}
+
+/* Para definir a área dos icons da direita */
+.direita {
+  height: 60px;
+  width: 200px;
+
+  margin: auto;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.caixa {
+  width: 100%;
+  height: 100%;
+
+  top: 88px;
+
+  position: absolute;
+
+  display: flex;
+}
+
+.stories-conteudo {
+  width: 935px;
+  height: 100%;
+
+  top: 88px;
+  left: 216px;
+
+  margin: auto auto;
+
+  position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.stories {
+  background: #ffffff;
+  width: 614px;
+  height: 118px;
+
+  top: 0px;
+  left: 280px;
+
+  position: absolute;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.stories ul {
+  display: flex;
+}
+
+.stories ul li a img {
+  display: flex;
+
+  height: 56px;
+  width: 56px;
+
+  border-radius: 100%;
+
+  transition: 0.6s ease-in-out;
+}
+
+.stories ul li {
+  margin-left: 8px;
+}
+
+.stories ul li a {
+  display: block;
+  background-color: white;
+  padding: 4px;
+  border-radius: 100%;
+}
+
+.username {
+  position: relative;
+
+  max-width: 74px;
+  margin-top: 6px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  display: block;
+  align-items: center;
+  text-align: center;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  color: #262626;
+}
+
+.borda-story {
+  position: center;
+  background: linear-gradient(45deg, gold, fuchsia);
+  padding: 4px;
+  border-radius: 100%;
+}
+
+.seta {
+  position: absolute;
+
+  left: 570px;
+
+  color: white;
+  font-size: 35px;
+
+  z-index: 1;
+}
+
+.feed {
+  width: 614px;
+  height: 100%px;
+
+  top: 150px;
+  left: 280px;
+
+  position: absolute;
+
+  display: block;
+}
+
+.bloco-feed {
+  width: 614px;
+  height: 749px;
+
+  margin-bottom: 60px;
+
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.topo-feed {
+  position: static;
+
+  height: 61px;
+  width: 614px;
+
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.foto-perfil-feed {
+  position: relative;
+  width: 32px;
+  height: 32px;
+
+  padding: 15px;
+
+  border-radius: 16px;
+}
+
+.username-feed {
+  position: relative;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #262626;
+}
+
+.pontos {
+  position: relative;
+
+  color: #262626;
+  font-size: 15px;
+  border-radius: 100%;
+
+  margin-left: 450px;
+  margin-top: 25px;
+}
+
+.foto {
+  position: absolute;
+  width: 612px;
+  height: 612px;
+}
+
+.bottom-feed1 {
+  position: absolute;
+
+  height: 38px;
+  width: 612px;
+
+  top: 673px;
+
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.icon-feed {
+  position: relative;
+
+  color: black;
+  font-size: 25px;
+
+  margin-left: 15px;
+  margin-top: 8px;
+
+  z-index: 1;
+}
+
+.bookmark {
+  position: relative;
+
+  color: black;
+  font-size: 25px;
+
+  margin-left: 440px;
+  margin-top: 8px;
+
+  z-index: 1;
+}
+
+.bottom-feed2 {
+  position: absolute;
+
+  height: 38px;
+  width: 612px;
+
+  top: 711px;
+
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.foto-curtida {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+
+  margin-left: 15px;
+  margin-top: 8px;
+}
+
+.text-curtida {
+  position: absolute;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  margin-left: 40px;
+  margin-top: 13px;
+
+  color: #000000;
+}
+
+.bloco-feed2 {
+  width: 614px;
+  height: 749px;
+
+  margin-bottom: 60px;
+
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.topo-feed2 {
+  position: static;
+
+  height: 61px;
+  width: 614px;
+
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.foto-perfil-feed2 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+
+  padding: 15px;
+
+  border-radius: 16px;
+}
+
+.username-feed2 {
+  position: relative;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #262626;
+}
+
+.pontos2 {
+  position: relative;
+
+  color: #262626;
+  font-size: 15px;
+  border-radius: 100%;
+
+  margin-left: 450px;
+  margin-top: 25px;
+}
+
+.foto2 {
+  position: absolute;
+  width: 612px;
+  height: 612px;
+}
+
+.bottom-feed1-2 {
+  position: absolute;
+
+  height: 38px;
+  width: 612px;
+
+  top: 1483px;
+
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.icon-feed2 {
+  position: relative;
+
+  color: black;
+  font-size: 25px;
+
+  margin-left: 15px;
+  margin-top: 8px;
+
+  z-index: 1;
+}
+
+.bookmark2 {
+  position: relative;
+
+  color: black;
+  font-size: 25px;
+
+  margin-left: 440px;
+  margin-top: 8px;
+
+  z-index: 1;
+}
+
+.bottom-feed2-2 {
+  position: absolute;
+
+  height: 38px;
+  width: 612px;
+
+  top: 1520px;
+
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.foto-curtida2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+
+  margin-left: 15px;
+  margin-top: 8px;
+}
+
+.text-curtida2 {
+  position: absolute;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  margin-left: 40px;
+  margin-top: 13px;
+
+  color: #000000;
+}
+
+.bloco-feed3 {
+  width: 614px;
+  height: 749px;
+
+  margin-bottom: 60px;
+
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.topo-feed3 {
+  position: static;
+
+  height: 61px;
+  width: 614px;
+
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.foto-perfil-feed3 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+
+  padding: 15px;
+
+  border-radius: 16px;
+}
+
+.username-feed3 {
+  position: relative;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #262626;
+}
+
+.pontos3 {
+  position: relative;
+
+  color: #262626;
+  font-size: 15px;
+  border-radius: 100%;
+
+  margin-left: 450px;
+  margin-top: 25px;
+}
+
+.foto3 {
+  position: absolute;
+  width: 612px;
+  height: 612px;
+}
+
+.bottom-feed1-3 {
+  position: absolute;
+
+  height: 38px;
+  width: 612px;
+
+  top: 673px;
+
+  top: 2292px;
+
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.icon-feed3 {
+  position: relative;
+
+  color: black;
+  font-size: 25px;
+
+  margin-left: 15px;
+  margin-top: 8px;
+
+  z-index: 1;
+}
+
+.bookmark3 {
+  position: relative;
+
+  color: black;
+  font-size: 25px;
+
+  margin-left: 440px;
+  margin-top: 8px;
+
+  z-index: 1;
+}
+
+.bottom-feed2-3 {
+  position: absolute;
+
+  height: 38px;
+  width: 612px;
+
+  top: 711px;
+
+  top: 2330px;
+
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.foto-curtida3 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+
+  margin-left: 15px;
+  margin-top: 8px;
+}
+
+.text-curtida3 {
+  position: absolute;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  margin-left: 40px;
+  margin-top: 13px;
+
+  color: #000000;
+}
+
+.sidebar {
+  width: 300px;
+  height: 480px;
+
+  top: 50px;
+  left: 950px;
+
+  position: absolute;
+}
+
+.foto-perfil {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+
+  border-radius: 28px;
+}
+
+.username-sidebar {
+  position: absolute;
+
+  width: 182px;
+  height: 40px;
+
+  margin-top: 9px;
+  margin-left: 70px;
+
+  display: block;
+}
+
+.username-perfil {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #262626;
+}
+
+.nome-perfil {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #8e8e8e;
+}
+
+.meio-sidebar {
+  width: 300px;
+  height: 310px;
+
+  margin-top: 80px;
+
+  display: flex;
+  align-items: justify;
+}
+
+.sugestao {
+  position: absolute;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #8e8e8e;
+}
+
+.ver-tudo {
+  position: absolute;
+
+  margin-left: 250px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #262626;
+}
+
+.usuario-sugestao {
+  position: relative;
+
+  width: 200px;
+  height: 295px;
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.foto-sugestao {
+  position: relative;
+  width: 32px;
+  height: 32px;
+
+  margin-bottom: 25px;
+
+  border-radius: 16px;
+}
+
+.username-siderbar-sugestao {
+  position: absolute;
+
+  width: 160px;
+  height: 295px;
+
+  margin-left: 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.bloco {
+  margin-bottom: 25px;
+}
+
+.username-sugestao {
+  position: relative;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #262626;
+}
+
+.segue-novo {
+  position: relative;
+
+  margin-top: 2px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #8e8e8e;
+}
+
+.seguir-sidebar {
+  position: absolute;
+
+  width: 100px;
+  height: 295px;
+
+  margin-left: 200px;
+
+  display: block;
+}
+
+.seguir {
+  position: relative;
+
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 43px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #139ef2;
+}
+
+.bottomsidebar {
+  position: absolute;
+
+  width: 300px;
+  height: 90px;
+}
+
+.links-rapidos {
+  position: relative;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+
+  color: #c7c7c7;
+}
+
+@media (max-width: 935px) {
+  .sidebar {
+    display: none;
+  }
+
+  .topo {
+    width: 100%;
+  }
+
+  .esquerda {
+    margin-right: auto;
+  }
+
+  .meio {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .direita {
+    margin-left: auto;
+  }
+
+  .stories {
+    width: 100%;
+    margin: auto;
+
+    left: auto;
+  }
+
+  .feed {
+    left: auto;
+  }
+
+  .bloco-feed {
+    width: 100%;
+  }
+}
+
+@media (max-width: 614px) {
+  .topo {
+    width: 100%;
+  }
+
+  .esquerda {
+    display: none;
+  }
+
+  .esquerda2 {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+  }
+
+  .icon {
+    position: relative;
+    font-size: 25px;
+  }
+
+  .logo-nome {
+    position: relative;
+  }
+
+  .icon-paper {
+    position: relative;
+    font-size: 25px;
+  }
+
+  .meio {
+    display: none;
+  }
+
+  .direita {
+    display: none;
+  }
+
+  .caixa {
+    top: 60px;
+  }
+
+  .stories {
+    width: 100%;
+    margin: auto;
+    top: 0px;
+    left: auto;
+  }
+
+  .seta {
+    display: none;
+  }
+
+  .feed {
+    width: 100%;
+    top: 117px;
+  }
+
+  .bloco-feed {
+    width: 100%;
+  }
+}
+
